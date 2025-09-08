@@ -36,23 +36,41 @@ Responsive UI: Mobile-friendly layout with loading states for UX clarity.
 Project Structure
 
 project-root/
+
 ├── backend/
+
 │   ├── server.js          # Express server setup
+
 │   ├── db.js             # SQLite configuration
+
 │   ├── routes/
+
 │   │   └── auth.js       # Authentication endpoints
+
 │   └── package.json      # Backend dependencies
+
 ├── frontend/
+
 │   ├── src/
+
 │   │   ├── main.jsx      # React entry point
+
 │   │   ├── App.jsx       # Root component
+
 │   │   └── components/
+
 │   │       ├── Login.jsx
+
 │   │       ├── Register.jsx
+
 │   │       └── Dashboard.jsx
+
 │   ├── index.html        # HTML template
+
 │   ├── vite.config.js    # Build config
+
 │   └── package.json      # Frontend dependencies
+
 └── README.md             # (This file)
 
 API Endpoints
@@ -83,8 +101,6 @@ npm install
 
 npm start
 
-Runs backend server at http://localhost:5000
-
 Auto-creates users.db (SQLite)
 
 Frontend
@@ -94,8 +110,6 @@ cd frontend
 npm install
 
 npm run dev
-
-Runs frontend at http://localhost:3000
 
 Usage Guide
 
@@ -138,5 +152,3 @@ Backend uses ES modules (check package.json)
 UI styling via Tailwind CSS (via CDN)
 
 Session lifespan: 24 hours
-
-CORS restricted to http://localhost:3000
